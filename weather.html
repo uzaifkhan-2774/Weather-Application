@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css"/>
+   
+  </head>
+
+  <body>
+    <h1 id="weather">Weather Report</h1>
+    <input type="text" placeholder="enter the city name " id="city" list="urbon"/>
+    <datalist id="urbon">
+       <option value="nagpur"></option>
+       <option value="pune"></option>
+       <option value="mumbai"></option>
+       <option value="Indore"></option>
+    </datalist>
+    <button
+      class=" searchButton"
+      onclick="calling()">    get weather   </button>
+  
+  
+    <div id="data"></div>
+    
+    <div id="delete">
+       <h1>Alert</h1>
+      <h2>invalid city name, Please enter a valid city name</h2>
+   
+    </div>
+
+
+
+
+    <script src="./weather.js"></script>
+  </body>
+</html>
